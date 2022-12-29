@@ -1,17 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,i,flag=0;
     scanf("%d",&n);
-    int arr[n],i,flag=0;
+    int a[n];
     for(i=0;i<n;i++)
-    scanf("%d",&arr[i]);
+    scanf("%d",&a[i]);
+    
     for(i=0;i<n;i++)
     {
-        if(arr[i]%2==0)
+        if(a[i]%2==0)
         {
             if(i%2==0)
-            flag=1;
+            
+            {
+                flag=1;
+            }
             else
             {
                 flag=0;
